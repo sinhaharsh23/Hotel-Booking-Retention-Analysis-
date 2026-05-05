@@ -1,0 +1,82 @@
+================================================================================
+  FINAL BUSINESS INSIGHTS REPORT
+  Project 2: Travel, Tourism & Hospitality
+  Customer Retention & Dynamic Pricing Analysis
+  Infotact Technical Internship Program
+================================================================================
+
+EXECUTIVE SUMMARY
+----------------------------------------
+We analysed 10,000 hotel booking records (City Hotel & Resort Hotel,
+2016-2019). Overall cancellation rate is 40%, causing significant revenue
+leakage. Using EDA and ML (Decision Tree), we identified key cancellation
+drivers and seasonal patterns to guide retention and pricing strategy.
+
+================================================================================
+KEY BUSINESS INSIGHTS
+================================================================================
+
+INSIGHT 1: HIGH CANCELLATION RATE (40%)
+  Nearly 2 in 5 bookings cancel — serious revenue risk.
+  City Hotels cancel 8% more than Resort Hotels.
+  ACTION: City Hotel retention programs need immediate attention.
+
+INSIGHT 2: LEAD TIME IS THE #1 CANCELLATION PREDICTOR
+  Bookings made 150+ days in advance cancel at 2x the rate.
+  Long lead time = more time to find alternatives or change plans.
+  ACTION: Send re-confirmation emails at Day-60 and Day-30 before arrival.
+
+INSIGHT 3: NON-REFUNDABLE DEPOSITS = NEAR-ZERO CANCELLATION
+  No Deposit bookings cancel ~40%. Non-Refundable cancel <5%.
+  This is the single most powerful tool to reduce cancellations.
+  ACTION: Offer non-refundable rate at 10-15% discount.
+
+INSIGHT 4: AUGUST IS PEAK — DYNAMIC PRICING OPPORTUNITY
+  August has highest bookings AND highest ADR.
+  January-February are weakest months.
+  ACTION: +25% price in Jul-Sep, -15% promo in Jan-Feb.
+
+INSIGHT 5: ONLINE TA = HIGHEST CANCELLATION RISK
+  OTA customers (Booking.com etc.) cancel most often.
+  No direct relationship with hotel reduces loyalty.
+  ACTION: Launch Book Direct campaign with 12% discount.
+
+INSIGHT 6: CORPORATE = HIGHEST VALUE SEGMENT
+  Corporate travelers have lowest cancellation rate.
+  Most loyal, most predictable, highest lifetime value.
+  ACTION: Corporate Loyalty Program with dedicated account manager.
+
+INSIGHT 7: SPECIAL REQUESTS = ENGAGEMENT & LOYALTY SIGNAL
+  Guests with 2+ special requests cancel far less.
+  Special requests = emotional investment in the stay.
+  ACTION: Ask for preferences at booking (room view, meals, etc.).
+
+================================================================================
+STRATEGIC RECOMMENDATIONS
+================================================================================
+
+For Revenue Manager:
+  - Implement seasonal pricing: +25% Jul-Sep, -15% Jan-Feb
+  - Use ML model to flag high-risk bookings for follow-up
+  - Track RevPAR weekly (not just ADR) for true health view
+
+For Marketing Director:
+  - Target long-lead-time + no-deposit + OTA guests with retention emails
+  - Book Direct campaign with exclusive perks
+  - Corporate loyalty program — highest LTV segment
+
+For Hotel Operations:
+  - Pre-arrival call for bookings made 90+ days in advance
+  - Train front desk to upsell packages at booking time
+  - Maintain waitlist for peak periods
+
+================================================================================
+ML MODEL SUMMARY
+================================================================================
+Best Model    : Decision Tree Classifier
+Key Metric    : Recall (minimise false negatives = undetected cancellations)
+Top Predictors: 1. lead_time  2. adr  3. deposit_type
+Recommendation: Integrate model into booking system.
+               Flag bookings with predicted cancel probability > 60%.
+               Trigger automated retention workflow for flagged bookings.
+================================================================================
